@@ -1470,7 +1470,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*}*/
 
 .social-links a {
-  font-size: 42px;
+  font-size: 36px;
   display: inline-block;
   background: #222636;
   color: #eee;
@@ -1479,8 +1479,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: 24px;
   border-radius: 50%;
   text-align: center;
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   transition: 0.3s;
 }
 
