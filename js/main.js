@@ -144,6 +144,22 @@ jQuery(document).ready(function( $ ) {
 
 // custom code
 
-  // load iframe after page loads
-  $('iframe#winmap').attr('src', 'https://maps.google.com/maps?q=Downtown%20Winchester%2C%20ma&t=&z=17&ie=UTF8&iwloc=&output=embed');
 });
+
+// load iframe AFTER page loads and scroll to venues in viewport
+function lazyLoad() {
+  $('iframe').each(function() {
+    var frame = $(this),
+        vidSource = $(frame).attr('data-src'),
+        distance = $(frame).offset().top - $(window).scrollTop(),
+        distTopBot = window.innerHeight - distance,
+        distBotTop = distance + $(frame).height();
+
+    if (distTopBot >= 0 && distBotTop >= 0) { // if frame is partly in view
+      $(frame).attr('src', vidSource);
+      $(frame).removeAttr('data-src');
+    }
+  });
+}
+var throttled = _.throttle(lazyLoad, 100);
+$(window).scroll(throttled);
