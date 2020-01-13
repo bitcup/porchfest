@@ -46,6 +46,10 @@ h6 {
   color: #0e1b4d;
 }
 
+ul {
+  font-size: 14px;
+}
+
 .main-page {
   margin-top: 70px;
 }
