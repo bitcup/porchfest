@@ -15,15 +15,15 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-a {
-  color: #f82249;
-  transition: 0.5s;
-}
+/*a {*/
+/*  color: #f82249;*/
+/*  transition: 0.5s;*/
+/*}*/
 
 a:hover,
 a:active,
 a:focus {
-  color: #f8234a;
+  /*color: #f8234a;*/
   outline: none;
   text-decoration: none;
 }
@@ -850,10 +850,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: ease-in-out .2s;
 }
 
+/*#schedule .schedule-item-separator {*/
+/*  padding-top: 15px;*/
+/*  padding-bottom: 15px;*/
+/*  transition: background-color ease-in-out 0.3s;*/
+/*}*/
+
+#schedule .schedule-item-location {
+  border-bottom: 1px solid #cad4f6;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+#schedule .schedule-item-location h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
 #schedule .schedule-item {
   border-bottom: 1px solid #cad4f6;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: background-color ease-in-out 0.3s;
 }
 
@@ -890,14 +908,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item h4 span {
-  font-style: italic;
+  /*font-style: italic;*/
   color: #19328e;
   font-weight: normal;
   font-size: 16px;
 }
 
+#schedule .schedule-item h5 {
+  font-size: 16px;
+  /*font-weight: 600;*/
+  margin-bottom: 5px;
+}
+
+
 #schedule .schedule-item p {
-  font-style: italic;
+  /*font-style: italic;*/
+  font-size: 14px;
   color: #152b79;
   margin-bottom: 0;
 }
@@ -921,7 +947,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #venue .venue-info {
-  background: url("../img/venue-info-bg.jpg") top center no-repeat;
+  background: url("../img/winchester_downtown.jpeg") top center no-repeat;
   background-size: cover;
   position: relative;
   padding-top: 60px;
@@ -930,7 +956,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #venue .venue-info:before {
   content: "";
-  background: rgba(13, 20, 41, 0.8);
+  background: rgba(13, 20, 41, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
