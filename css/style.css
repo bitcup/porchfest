@@ -107,9 +107,9 @@ ul {
 --------------------------------*/
 
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .section-header::before {
@@ -666,7 +666,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   position: relative;
   /*color: #fff;*/
-  padding: 60px 0 40px 0;
+  padding: 85px 0 40px 0;
 }
 
 #about:before {
@@ -809,7 +809,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 
 #schedule {
-  padding: 60px 0 60px 0;
+  padding: 85px 0 40px 0;
 }
 
 #schedule .nav-tabs {
