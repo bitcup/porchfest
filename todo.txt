@@ -1,0 +1,3 @@
+- regen sitemap
+- resize logo in nav
+- favicon, idea: microphone

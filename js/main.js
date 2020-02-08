@@ -1,165 +1,45 @@
-jQuery(document).ready(function( $ ) {
+jQuery(document).ready(function ($) {
 
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
-    return false;
-  });
-
-  // Header fixed on scroll
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-    } else {
-      $('#header').removeClass('header-scrolled');
-    }
-  });
-
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-  }
-
-  // Real view height for mobile devices
-  if (window.matchMedia("(max-width: 767px)").matches) {
-    $('#intro').css({ height: $(window).height() });
-  }
-
-  // Initiate the wowjs animation library
-  // new WOW().init();
-
-  // Initialize Venobox
-  $('.venobox').venobox({
-    bgcolor: '',
-    overlayColor: 'rgba(6, 12, 34, 0.85)',
-    closeBackground: '',
-    closeColor: '#fff'
-  });
-
-  // Initiate superfish on nav menu
-  // $('.nav-menu').superfish({
-  //   animation: {
-  //     opacity: 'show'
-  //   },
-  //   speed: 400
-  // });
-
-  // Mobile Navigation
-  if ($('#nav-menu-container').length) {
-    var $mobile_nav = $('#nav-menu-container').clone().prop({
-      id: 'mobile-nav'
-    });
-    $mobile_nav.find('> ul').attr({
-      'class': '',
-      'id': ''
-    });
-    $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>');
-    $('body').append('<div id="mobile-body-overly"></div>');
-    $('#mobile-nav').find('.menu-has-children').prepend('<i class="fa fa-chevron-down"></i>');
-
-    $(document).on('click', '.menu-has-children i', function(e) {
-      $(this).next().toggleClass('menu-item-active');
-      $(this).nextAll('ul').eq(0).slideToggle();
-      $(this).toggleClass("fa-chevron-up fa-chevron-down");
+    Handlebars.registerHelper('ifEquals', function(arg1, arg2, options) {
+        return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
     });
 
-    $(document).on('click', '#mobile-nav-toggle', function(e) {
-      $('body').toggleClass('mobile-nav-active');
-      $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-      $('#mobile-body-overly').toggle();
+    Handlebars.registerHelper('endsWith', function(arg1, arg2, options) {
+        return (arg1.endsWith(arg2)) ? options.fn(this) : options.inverse(this);
     });
 
-    $(document).click(function(e) {
-      var container = $("#mobile-nav, #mobile-nav-toggle");
-      if (!container.is(e.target) && container.has(e.target).length === 0) {
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
-        }
-      }
+    Handlebars.registerHelper('contains', function(arg1, arg2, options) {
+        return (arg1.indexOf(arg2) != -1) ? options.fn(this) : options.inverse(this);
     });
-  } else if ($("#mobile-nav, #mobile-nav-toggle").length) {
-    $("#mobile-nav, #mobile-nav-toggle").hide();
-  }
 
-  // Smooth scroll for the menu and links with .scrollto classes
-  $('.nav-menu a, #mobile-nav a, .scrollto').on('click', function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      if (target.length) {
-        var top_space = 0;
+    $('#nav-script').load('partials/nav.html', function () {
+        var template = Handlebars.compile($('#nav-template').html());
+        var data = {'pathName': window.location.pathname}
+        $('#nav-partial').append(template(data));
+    });
 
-        if ($('#header').length) {
-          top_space = $('#header').outerHeight();
-
-          if( ! $('#header').hasClass('header-fixed') ) {
-            top_space = top_space - 20;
-          }
-        }
-
-        $('html, body').animate({
-          scrollTop: target.offset().top - top_space
-        }, 1500, 'easeInOutExpo');
-
-        if ($(this).parents('.nav-menu').length) {
-          $('.nav-menu .menu-active').removeClass('menu-active');
-          $(this).closest('li').addClass('menu-active');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('#mobile-nav-toggle i').toggleClass('fa-times fa-bars');
-          $('#mobile-body-overly').fadeOut();
-        }
-        return false;
-      }
-    }
-  });
-
-  // Gallery carousel (uses the Owl Carousel library)
-  // $(".gallery-carousel").owlCarousel({
-  //   autoplay: true,
-  //   dots: true,
-  //   loop: true,
-  //   center:true,
-  //   responsive: { 0: { items: 1 }, 768: { items: 3 }, 992: { items: 4 }, 1200: {items: 5}
-  //   }
-  // });
-
-  // Buy tickets select the ticket type on click
-  $('#buy-ticket-modal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget);
-    var ticketType = button.data('ticket-type');
-    var modal = $(this);
-    modal.find('#ticket-type').val(ticketType);
-  })
-
-// custom code
+    $('#footer-script').load('partials/footer.html', function () {
+        var template = Handlebars.compile($('#footer-template').html());
+        $('#footer-partial').append(template());
+    });
 
 });
 
 // load iframe AFTER page loads and scroll to venues in viewport
 function lazyLoad() {
-  $('iframe').each(function() {
-    var frame = $(this),
-        vidSource = $(frame).attr('data-src'),
-        distance = $(frame).offset().top - $(window).scrollTop(),
-        distTopBot = window.innerHeight - distance,
-        distBotTop = distance + $(frame).height();
+    $('iframe').each(function () {
+        var frame = $(this),
+            vidSource = $(frame).attr('data-src'),
+            distance = $(frame).offset().top - $(window).scrollTop(),
+            distTopBot = window.innerHeight - distance,
+            distBotTop = distance + $(frame).height();
 
-    if (distTopBot >= 0 && distBotTop >= 0) { // if frame is partly in view
-      $(frame).attr('src', vidSource);
-      $(frame).removeAttr('data-src');
-    }
-  });
+        if (distTopBot >= 0 && distBotTop >= 0) { // if frame is partly in view
+            $(frame).attr('src', vidSource);
+            $(frame).removeAttr('data-src');
+        }
+    });
 }
+
 var throttled = _.throttle(lazyLoad, 100);
 $(window).scroll(throttled);
