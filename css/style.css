@@ -49,12 +49,19 @@ ul {
 /*  padding-top: 100%;*/
 /*}*/
 
-.resp-iframe {
+.resp-gform {
   /*position: absolute;*/
   top: 70px;
   left: 0;
   width: 100%;
   height: 3000px;
+  border: 0;
+  padding-bottom: 0;
+}
+
+.resp-map {
+  width: 100%;
+  height: 450px;
   border: 0;
   padding-bottom: 0;
 }
