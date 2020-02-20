@@ -59,6 +59,16 @@ ul {
   padding-bottom: 0;
 }
 
+.resp-gform-short {
+  /*position: absolute;*/
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 1300px;
+  border: 0;
+  padding-bottom: 0;
+}
+
 .resp-map {
   width: 100%;
   height: 450px;
