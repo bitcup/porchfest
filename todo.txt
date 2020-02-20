@@ -1,3 +1,19 @@
-- regen sitemap
+- [DONE] regen sitemap
 - resize logo in nav
-- favicon, idea: microphone
+
+- [DONE] favicon, idea: microphone
+
+- link to porchfest.win from other sites:
+    - MCC
+    - WCC
+    - WCMS
+    - porchfest.info
+
+- update metadata to include more info
+    - see what other sites have done
+
+- [DONE] re-engineer google forms
+    - see: https://blog.webjeda.com/google-form-customize/
+    - too much work
+
+- links to social
