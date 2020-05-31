@@ -23,6 +23,14 @@ jQuery(document).ready(function ($) {
         $('#footer-partial').append(template());
     });
 
+    // for scrolling to bottom of expanded section in about.html
+    $("#collapseAbout").on("shown.bs.collapse", function () {
+        $("html, body").animate({
+            scrollTop: $(document).height() },
+            "slow");
+        return false;
+    });
+
 });
 
 // load iframe AFTER page loads and scroll to venues in viewport
