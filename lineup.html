@@ -8,149 +8,186 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Winchester Porchfest, scheduled for June 12, 2021 in Downtown Winchester, MA" name="description">
 
-    <!-- Favicons -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="lib/venobox/venobox.css" rel="stylesheet">
-
-    <!-- Main Stylesheet File -->
     <link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
 
-<header id="header" class="header-fixed">
-    <div class="container">
-
-        <div id="logo" class="pull-left">
-            <!-- Uncomment below if you prefer to use a text logo -->
-<!--            <h1><a href="home.html" class="scrollto">Win<span>P</span>F</a></h1>-->
-            <a href="index.html"><img src="img/logo2.png" alt="Winchester Porchfest" title="Winchester Porchfest"></a>
-        </div>
-
-        <nav id="nav-menu-container">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="menu-active"><a href="lineup.html">Lineup</a></li>
-                <li><a href="hosts.html">Hosts</a></li>
-                <li><a href="performers.html">Performers</a></li>
-            </ul>
-        </nav><!-- #nav-menu-container -->
-    </div>
-</header><!-- #header -->
-
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<span id="nav-partial"></span>
 
 <main id="main">
 
-    <section id="schedule">
+    <section id="content-section">
         <div class="container">
 
-            <div class="section-header">
-                <h2>Lineup</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Lineup</h2>
+                </div>
             </div>
 
-            <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p>
+                        The First Annual Winchester Porchfest will be held on:
+                    </p>
+                    <p>
+                        Saturday, June 12, 2021 (rain date June 13)<br>
+                        12noon – 5:30pm
+                    </p>
 
-                <div class="row schedule-item-location">
-                    <h4>114 Swanton Street</h4>
-                </div>
+                    <ul class="nav nav-tabs" id="lineupTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="hosts-tab" data-toggle="tab" href="#hosts" role="tab"
+                               aria-controls="hosts" aria-selected="true">Hosts</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="performers-tab" data-toggle="tab" href="#performers" role="tab"
+                               aria-controls="performers" aria-selected="true">Performers</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="lineupTabsContent">
+                        <div class="tab-pane fade show active" id="hosts" role="tabpanel" aria-labelledby="hosts-tab">
+                            <p>&nbsp;</p>
+                            <p>The following hosts have signed up so far (as of 04/21).  If you're interested in hosting, please fill
+                                out our <a href="hosts.html">hosts</a> form.</p>
 
-                <div class="row schedule-item">
-                    <div class="col-md-2">
-                        <time>10:00 AM</time>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="performer">
-                            <img src="img/performers/vitalogy.png" alt="Vitalogy">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Time Slots</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr >
+                                    <th scope="row">5 Copley Street</th>
+                                    <td>3:00p - 4:00p<br>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10 Wildwood Street</th>
+                                    <td>12:00p - 1:00p<br>3:00p - 4:00p<br>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">433 Main Street</th>
+                                    <td>12:00p - 1:00p<br>1:30p - 2:30p<br>3:00p - 4:00p<br>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">91 Mystic Valley Parkway</th>
+                                    <td>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">71 Holland Street<br>(driveway on Spruce Street)</th>
+                                    <td>12:00p - 1:00p<br>1:30p - 2:30p<br>3:00p - 4:00p<br>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">32 Chester Street</th>
+                                    <td>12:00p - 1:00p<br>1:30p - 2:30p<br>3:00p - 4:00p<br>4:30p - 5:30p</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">180 Mystic Valley Parkway</th>
+                                    <td>1:30p - 2:30p</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
                         </div>
-                        <h4>
-                            <a href="https://www.facebook.com/vitalogypearljamtribute/" target="_blank">Vitalogy</a>
-                        </h4>
-                        <h5>
-                            <span>A Pearl Jam Cover Band</span>
-                        </h5>
-                        <p>Rock, 90s Alternative</p>
-                    </div>
-                </div>
+                        <div class="tab-pane fade" id="performers" role="tabpanel" aria-labelledby="performers-tab">
+                            <p>&nbsp;</p>
+                            <p>The following performers have signed up so far (as of 04/21).  If you're interested in performing, please fill
+                                out our <a href="performers.html">performers</a> form.</p>
 
-                <div class="row schedule-item">
-                    <div class="col-md-2">
-                        <time>11:00 AM</time>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="performer">
-                            <img src="img/performers/brit_floyd.jpg" alt="Brit Floyd">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Performer</th>
+                                    <th scope="col">Type</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Alewife Run</th>
+                                    <td>Funk, classic rock, R&B</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://rachelsumnermusic.com/" target="_blank">Rachel Sumner</a></th>
+                                    <td>Folk</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">June Woodward</th>
+                                    <td>Guitar/ukulele/voice</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://www.youtube.com/watch?v=orkemNwuuqo" target="_blank">The Morningside Messengers</a></th>
+                                    <td>Jazz instrumental</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://soundcloud.com/frydeeg" target="_blank">Fry and Deeg</a></th>
+                                    <td>Acoustic classic rock covers</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">SIX</th>
+                                    <td>Classic rock covers</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://about.me/off-the" target="_blank">OTR (Off the Record)</a></th>
+                                    <td>Various fundraisers</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://www.shukulele.com/" target="_blank">Shukulele</a></th>
+                                    <td>Ukelele band</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Steve Nardone</th>
+                                    <td>Folk, blues, a little country (roots music)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://youtu.be/TEfbc-ngS0I" target="_blank">Steve Nardone</a></th>
+                                    <td>Acoustic and saxophone duo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cliff & Carl</th>
+                                    <td>Hymns, movie and broadway tunes, classical pieces</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://www.facebook.com/giovanna.ward.3" target="_blank">Giovanna De Marco Music</a></th>
+                                    <td>Vocals, guitar</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><a href="https://www.instagram.com/beauch4871/?hl=en" target="_blank">Justin Beauchesne</a></th>
+                                    <td>Singing, guitar</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mr Big and the Allstars</th>
+                                    <td>Rock cover band</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
                         </div>
-                        <h4>
-                            <a href="https://www.britfloyd.com" target="_blank">Brit Floyd</a>
-                        </h4>
-                        <h5>
-                            <span>Pink Floyd Cover Band</span>
-                        </h5>
-                        <p>Classic Rock, Psychedelic Rock</p>
                     </div>
-                </div>
 
-                <div class="row schedule-item-location">
-                    <h4>50 Cross Street</h4>
-                </div>
-
-                <div class="row schedule-item">
-                    <div class="col-md-2">
-                        <time>02:00 PM</time>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="performer">
-                            <img src="img/performers/bsb.jpg" alt="Backstreet's Back">
-                        </div>
-                        <h4>
-                            <a href="https://www.facebook.com/BSBTributeShow/" target="_blank">Backstreet's Back</a>
-                        </h4>
-                        <h5>
-                            <span>Back Street Boys Cover Band</span>
-                        </h5>
-                        <p>Party, 90s</p>
-                    </div>
                 </div>
 
             </div>
-
-            <div class="row" style="padding-bottom: 65px"></div>
-
         </div>
     </section>
 
 </main>
 
-<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-<!--<footer id="footer" class="fixed-bottom">-->
-<!--    <div class="container">-->
-<!--        <div class="copyright">-->
-<!--            <div class="social-links">-->
-<!--                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>-->
-<!--                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-->
-<!--                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>&lt;!&ndash; #footer &ndash;&gt;-->
-
 <!-- JavaScript Libraries -->
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/jquery/jquery-migrate.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="lib/venobox/venobox.min.js"></script>
-
 <script src="lib/underscore/underscore-min.js"></script>
+<script src="lib/handlebars/handlebars.min-v4.7.2.js"></script>
+
+<!-- template scripts -->
+<span id="nav-script"></span>
 
 <!-- Template Main Javascript File -->
 <script src="js/main.js"></script>

@@ -2,32 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.porchfest.win/</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.porchfest.win/</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.porchfest.win/about.html</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.porchfest.win/lineup.html</loc>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.porchfest.win/hosts.html</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.porchfest.win/performers.html</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.porchfest.win/volunteers.html</loc>
-        <lastmod>2020-02-08</lastmod>
+        <lastmod>2021-04-21</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.porchfest.win/raom.html</loc>
+        <lastmod>2021-04-21</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.porchfest.win/contact.html</loc>
+        <lastmod>2021-04-21</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>
