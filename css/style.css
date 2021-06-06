@@ -361,6 +361,33 @@ a.announcement {
 }
 
 /*--------------------------------------------------------------
+# Lineup
+--------------------------------------------------------------*/
+.band-loc {
+  font-weight: normal;
+}
+.band-name {
+  font-weight: normal;
+  margin-bottom: 0 !important;
+}
+.band-desc {
+  /*font-weight: lighter;*/
+  font-size: smaller !important;
+}
+
+.tableFixHead {
+  overflow: auto;
+  height: 100px;
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+
+/*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
 
