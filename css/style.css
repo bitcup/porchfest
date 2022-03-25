@@ -368,8 +368,13 @@ a.announcement {
 }
 
 
+.logo-links {
+  text-align: right;
+  height: 38px;
+}
+
 .social-links {
-  text-align: center;
+  text-align: left;
   height: 38px;
 }
 
