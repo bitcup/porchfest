@@ -367,18 +367,12 @@ a.announcement {
   content: "\f055" !important;
 }
 
-
-.logo-links {
-  text-align: right;
+.social {
+  text-align: center;
   height: 38px;
 }
 
 .social-links {
-  text-align: left;
-  height: 38px;
-}
-
-.social-links a {
   font-size: 25px;
   display: inline-block;
   background: #222636;
@@ -393,10 +387,22 @@ a.announcement {
   transition: 0.3s;
 }
 
-.social-links a:hover {
+.social-links:hover {
   background: #f82249;
   color: #fff;
 }
+
+.sponsor {
+  font-size: 25px;
+  padding: -5px 0!important;
+  margin-right: 5px;
+}
+
+.sponsor img {
+  margin-top: -5px;
+  max-height: 30px;
+}
+
 
 /*--------------------------------------------------------------
 # Lineup
