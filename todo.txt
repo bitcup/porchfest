@@ -17,3 +17,5 @@
     - too much work
 
 - links to social
+
+- make porchfest date and last date to sign up partials and include them on pages
