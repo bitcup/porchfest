@@ -411,7 +411,8 @@ a.announcement {
   font-weight: normal;
 }
 .band-name {
-  font-weight: normal;
+  /*font-weight: normal;*/
+  font-weight: bold;
   margin-bottom: 0 !important;
 }
 .band-desc {
