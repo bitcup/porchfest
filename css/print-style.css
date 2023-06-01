@@ -565,6 +565,6 @@ a.announcement {
 @media print {
     a[href*='//']:after {
         content:" (" attr(href) ") ";
-        color: $primary;
+        /*color: $primary;*/
     }
 }
