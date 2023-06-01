@@ -1,0 +1,570 @@
+body {
+    background: #fff;
+    color: #2f3138;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*a {*/
+/*  color: #f82249;*/
+/*  transition: 0.5s;*/
+/*}*/
+
+a {
+    color: black;
+    outline: none;
+    text-decoration: none;
+}
+
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #0e1b4d;
+}
+
+ul {
+    font-size: 14px;
+}
+table {
+    font-size: 14px;
+}
+
+
+
+.main-page {
+    margin-top: 70px;
+}
+
+/*.resp-container {*/
+/*  !*position: relative;*!*/
+/*  overflow: hidden;*/
+/*  padding-top: 100%;*/
+/*}*/
+
+a.announcement {
+    color: #f82249;
+}
+
+.text-decoration-line-through {
+    text-decoration: line-through !important;
+}
+
+.grayout {
+    opacity: 0.5; /* Real browsers */
+    filter: alpha(opacity = 50); /* MSIE */
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+.resp-gform {
+    /*position: absolute;*/
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 4000px;
+    border: 0;
+    padding-bottom: 0;
+}
+
+.resp-gform-medium {
+    /*position: absolute;*/
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 1500px;
+    border: 0;
+    padding-bottom: 0;
+}
+
+.resp-gform-short {
+    /*position: absolute;*/
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 1300px;
+    border: 0;
+    padding-bottom: 0;
+}
+
+.resp-map {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    padding-bottom: 0;
+}
+
+/* Sections Header
+--------------------------------*/
+
+.section-header {
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-header::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #f82249;
+    bottom: 0;
+    /*left: calc(50% - 25px);*/
+}
+
+.section-header h2 {
+    font-size: 36px;
+    /*text-transform: uppercase;*/
+    /*text-align: center;*/
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-header p {
+    /*text-align: center;*/
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #9195a2;
+}
+
+.section-with-bg {
+    background-color: #f6f7fd;
+}
+
+/*--------------------------------------------------------------
+# Intro Section
+--------------------------------------------------------------*/
+
+#intro {
+    width: 100%;
+    height: 60vh;
+    /*background: url(../img/fest-bg-1.jpg) top center;*/
+    /*background-size: cover;*/
+    overflow: hidden;
+    position: relative;
+}
+
+#intro:before {
+    content: "";
+    /*background: rgba(6, 12, 34, 0.5);*/
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#intro .intro-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0px;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#intro h1 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 56px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#intro h2 {
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#intro h1 span {
+    color: #f82249;
+}
+
+#intro p {
+    color: #ebebeb;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#intro .about-btn {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #f82249;
+}
+
+.sponsors-hp {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 20px !important;
+}
+
+.carousel-item .img-fluid {
+    width:100%;
+}
+.carousel-item a {
+    display: block;
+    width:100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    color: #fff;
+    text-align: center
+}
+
+.home-footer {
+    padding-top: 20px;
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+
+#content-section {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*background: url("../img/fest-bg-2.jpg");*/
+    /*background-size: cover;*/
+    /*overflow: hidden;*/
+    /*position: relative;*/
+    /*color: #fff;*/
+    padding-top: 20px;
+}
+
+/*#content-section:before {*/
+/*  content: "";*/
+/*  !*background: rgba(13, 20, 41, 0.6);*!*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*}*/
+
+#content-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /*color: #fff;*/
+}
+
+#content-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    margin-bottom: 10px;
+    /*color: #fff;*/
+}
+
+#content-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    /*color: #fff;*/
+}
+
+/*--------------------------------------------------------------
+# F.A.Q Section
+--------------------------------------------------------------*/
+
+#faq {
+    padding: 60px 0;
+}
+
+#faq #faq-list {
+    padding: 0;
+    list-style: none;
+}
+
+#faq #faq-list li {
+    border-bottom: 1px solid #ddd;
+}
+
+#faq #faq-list a {
+    padding: 18px 0;
+    display: block;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+#faq #faq-list i {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 16px;
+}
+
+#faq #faq-list p {
+    margin-bottom: 20px;
+}
+
+#faq #faq-list a.collapse {
+    color: #f82249;
+}
+
+#faq #faq-list a.collapsed {
+    color: #000;
+}
+
+#faq #faq-list a.collapsed i::before {
+    content: "\f055" !important;
+}
+
+.social {
+    text-align: center;
+    height: 38px;
+}
+
+.social-links {
+    font-size: 25px;
+    display: inline-block;
+    background: #222636;
+    color: #eee;
+    line-height: 1;
+    padding: 5px 0;
+    margin-right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.social-links:hover {
+    background: #f82249;
+    color: #fff;
+}
+
+.sponsor {
+    font-size: 25px;
+    padding: -5px 0!important;
+    margin-right: 5px;
+}
+
+.sponsor img {
+    margin-top: -5px;
+    max-height: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Schedule
+--------------------------------------------------------------*/
+.band-loc {
+    font-weight: bold;
+    color: black !important;
+}
+.band-name {
+    /*font-weight: normal;*/
+    font-weight: bold;
+    margin-bottom: 0 !important;
+    outline: none;
+    text-decoration: none;
+}
+.band-name .a {
+    outline: none;
+    text-decoration: none;
+}
+.band-desc {
+    /*font-weight: lighter;*/
+    font-size: smaller !important;
+}
+
+.tableFixHead {
+    overflow: auto;
+    height: 100px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (min-width: 767px) {
+    #subscribe input {
+        min-width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    #contact .contact-address,
+    #contact .contact-phone,
+    #contact .contact-email {
+        padding: 20px 0;
+    }
+
+    #contact .contact-phone {
+        /*border-left: 1px solid #ddd;*/
+        border-right: 1px solid #ddd;
+    }
+}
+
+@media (min-width: 991px) {
+    #schedule .sub-heading {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #intro {
+        background-attachment: fixed;
+    }
+
+    #content-section {
+        background-attachment: fixed;
+    }
+
+    #subscribe {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1199px) {
+    #header .container {
+        max-width: 100%;
+    }
+
+    .nav-menu a {
+        padding: 8px 4px;
+    }
+}
+
+@media (max-width: 991px) {
+    #header {
+        background: rgba(6, 12, 34, 0.98);
+        height: 70px;
+        padding: 15px 0;
+        transition: all 0.5s;
+    }
+
+    #nav-menu-container {
+        display: none;
+    }
+
+    #mobile-nav-toggle {
+        display: inline;
+    }
+
+    #intro .intro-container {
+        /*top: -100px;*/
+    }
+
+    #intro h1 {
+        font-size: 38px;
+    }
+
+    #intro p {
+        font-size: 20px;
+    }
+
+    #schedule .nav-tabs a {
+        padding: 8px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+
+    #faq #faq-list a {
+        font-size: 18px;
+    }
+
+    #faq #faq-list i {
+        top: 13px;
+    }
+}
+
+@media (max-width: 767px) {
+    #schedule .nav-tabs a {
+        padding: 8px 50px;
+    }
+}
+
+@media (max-width: 574px) {
+    #venue .venue-info h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #schedule .nav-tabs a {
+        padding: 8px 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    #subscribe button {
+        margin-top: 10px;
+    }
+}
+
+@media print {
+    a[href*='//']:after {
+        content:" (" attr(href) ") ";
+        color: $primary;
+    }
+}
