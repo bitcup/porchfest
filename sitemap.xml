@@ -15,11 +15,11 @@
         <lastmod>2024-03-10</lastmod>
         <changefreq>daily</changefreq>
     </url>
-<!--    <url>-->
-<!--        <loc>https://www.porchfest.win/schedule.html</loc>-->
-<!--        <lastmod>2024-03-10</lastmod>-->
-<!--        <changefreq>daily</changefreq>-->
-<!--    </url>-->
+    <url>
+        <loc>https://www.porchfest.win/schedule.html</loc>
+        <lastmod>2024-03-10</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
     <url>
         <loc>https://www.porchfest.win/hosts.html</loc>
         <lastmod>2021-04-21</lastmod>
